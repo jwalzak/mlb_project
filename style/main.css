@@ -1,0 +1,36 @@
+/*1. Put new information in  a new div
+  2. name the div...??? class
+  3. Make the div hidden and then on hover of the arrows drop down*/
+body {
+	background: url("../images/big_swing.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center; 
+	background-color: #d3dcf2;
+	color: #43464c;
+}
+
+.results {
+	background: #48577d;
+	color: #d3dcf2;
+	border-top: 1px solid #000;
+	font-family: arial, helvetica, sans-serif;
+}
+
+#toronto{
+	font-family: arial, helvetica, sans-serif;
+	width: 30%;
+}
+
+#output {
+	font-family: arial, helvetica, sans-serif;
+	width: 30%;
+}
+
+i {
+	margin-right: 10px;
+}
+
+i:hover {
+	transform: rotate(90deg);
+}

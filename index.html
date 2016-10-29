@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>MLB Demo</title>
+    <link href="style/main.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/c3c19ab8d0.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+<body onload="">
+    <div id="box">
+        
+    </div>
+    <p>Please enter a date the app will then show you all the MLB games played that day.</p>
+    <form>
+        <div id="date">
+            <label >Day: </label><input type="text" id="day1"  /><br /> 
+            <label>Month: </label><input type="text" id="month1"  /><br />    
+            <label>Year: </label><input type="text" id="year1" /><br />   
+            <input id="button" onclick="getToronto()" type="button" value="Submit" />
+        </div>
+        <div id="toronto"></div>
+        <div id="output"></div>
+    </form>
+</body>
+</html>
+
