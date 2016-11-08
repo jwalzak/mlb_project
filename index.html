@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>MLB Demo</title>
-    <link href="style/main.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
     <script src="https://use.fontawesome.com/c3c19ab8d0.js"></script>
+    <link href="style/main.css" rel="stylesheet" />
     <script src="scripts/main.js"></script>
 </head>
 <body onload="">
-    <div id="box">
-        
-    </div>
-    <p>Please enter a date the app will then show you all the MLB games played that day.</p>
+    <header> 
+        <h1>Game Getter</h1>       
+    </header>
+    <div id="wrap">
+    <div id="box"></div>
+    <h2>Please enter a date the app will then show you all the MLB games played that day.</h2>
     <form>
         <div id="date">
-            <label >Day: </label><input type="text" id="day1"  /><br /> 
-            <label>Month: </label><input type="text" id="month1"  /><br />    
-            <label>Year: </label><input type="text" id="year1" /><br />   
+        <ul>
+            <label >Day: <li></label><input type="text" id="day1"  /></li>
+            <label>Month:<li> </label><input type="text" id="month1"  /></li>   
+            <label>Year: <li></label><input type="text" id="year1" /></li>  
             <input id="button" onclick="getToronto()" type="button" value="Submit" />
+            </ul>
         </div>
         <div id="toronto"></div>
         <div id="output"></div>
     </form>
+    </div>
 </body>
 </html>
 

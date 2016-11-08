@@ -37,20 +37,9 @@ function getBaseballData() {
 
     var baseballJson = getJSON("http://gd2.mlb.com/components/game/mlb/year_" + year + "/month_" + month + "/day_" + day + "/master_scoreboard.json");
 
-    //alert(baseballJson);
     baseballObject = JSON.parse(baseballJson);
 
-     //output();
-     // getToronto();
-    
 }
-
-// function output() {
-//     for (var i = 0; i < baseballObject.data.games.game.length; i++) {        
-//         document.writeln(baseballObject.data.games.game[i].home_team_city);
-//     }
-// }
-
 
 //Gets the data from getBaseballData();
 //Uses the basballObject object to go through
@@ -60,14 +49,15 @@ function getBaseballData() {
 //Then runs the createContent() function
 function getToronto(){
     getBaseballData();
-    var creDiv = "<div class='results'>";
+    // i element connects to font awesome
+    var creDiv = "<div class='results'><i class='fa fa-arrow-right' aria-hidden='true'></i>";
     var totalDiv = "";
 
     for(var i = 0; i<baseballObject.data.games.game.length; i++){
-             var homeCity = baseballObject.data.games.game[i].home_team_name;
-             var awayCity = baseballObject.data.games.game[i].away_team_name;
-                 if(homeCity == 'Blue Jays' || awayCity == 'Blue Jays'){
-                    totalDiv += creDiv + "<i class='fa fa-arrow-right' aria-hidden='true'></i>The home team is: " + homeCity + ". The away team is: " + awayCity;
+             var homeTeam = baseballObject.data.games.game[i].home_team_name;
+             var awayTeam = baseballObject.data.games.game[i].away_team_name;
+                 if(homeTeam == 'Blue Jays' || awayTeam == 'Blue Jays'){
+                    totalDiv += creDiv + "The home team is: " + homeTeam + ". The away team is: " + awayTeam;
                     document.getElementById("toronto").innerHTML = totalDiv;
                     break;
                  }//End if
@@ -79,17 +69,20 @@ function getToronto(){
 //Similar to getToronto(); but places all other games to the
 //div #output
  function createContent() {
-     var creDiv = "<div class='results'>";
+    // i ele=memt connects with font awesome
+     var creDiv = "<div class='results'><i class='fa fa-arrow-right' aria-hidden='true'></i>";
      var totalDiv = "";
     
      for (var i = 0; i<baseballObject.data.games.game.length; i++){
-        var homeCity = baseballObject.data.games.game[i].home_team_name;
-        var awayCity = baseballObject.data.games.game[i].away_team_name;
+        var homeTeam = baseballObject.data.games.game[i].home_team_name;
+        var awayTeam = baseballObject.data.games.game[i].away_team_name;
 
-        if(homeCity != 'Blue Jays' && awayCity != 'Blue Jays'){
+        if(homeTeam != 'Blue Jays' && awayTeam != 'Blue Jays'){
 
-         totalDiv += creDiv + "<i class='fa fa-arrow-right' aria-hidden='true'></i>The home team is: " + baseballObject.data.games.game[i].home_team_name + ". The away team is " + baseballObject.data.games.game[i].away_team_name;
+         totalDiv += creDiv + "The home team is: " + baseballObject.data.games.game[i].home_team_name + ". The away team is " + baseballObject.data.games.game[i].away_team_name;
          document.getElementById("output").innerHTML = totalDiv;
      }
      }
  }
+
+ 

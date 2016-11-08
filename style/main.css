@@ -1,6 +1,9 @@
-/*1. Put new information in  a new div
-  2. name the div...??? class
-  3. Make the div hidden and then on hover of the arrows drop down*/
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	background: url("../images/big_swing.png");
 	background-repeat: no-repeat;
@@ -8,6 +11,31 @@ body {
     background-position: center; 
 	background-color: #d3dcf2;
 	color: #43464c;
+}
+
+header {
+	height: 125px;
+	border-bottom: 2px solid #ff0018;
+	background: #000;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'Bevan', cursive;
+	text-align: center;
+	font-size: 75px;
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	display: block;
+}
+
+li {
+	list-style-type: none;
 }
 
 .results {
@@ -27,10 +55,41 @@ body {
 	width: 30%;
 }
 
-i {
-	margin-right: 10px;
+#wrap {
+	padding: 5px;
 }
 
-i:hover {
-	transform: rotate(90deg);
+i {
+	margin-right: 10px;
+	padding-left: 15px;	
+	color: #ff0018;
+}
+
+label {
+	width: 150px;
+	padding-right: 100px;
+	color: #ff0018;
+}
+
+#day1 {
+	margin-left: 20px;
+
+}
+
+#month1 {
+	margin-left: 20px;
+}
+
+#year1 {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+#button {
+	height: 35px;
+	width: 75px;
+	border: 1px solid #ff0818;
+	background: #48577d;
+	color: #fff;
+
 }
