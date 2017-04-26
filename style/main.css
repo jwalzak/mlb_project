@@ -6,6 +6,7 @@ html, body {
 
 body {
 	background: url("../images/big_swing.png");
+	background-position: center 150px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center; 
