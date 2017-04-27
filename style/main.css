@@ -6,10 +6,8 @@ html, body {
 
 body {
 	background: url("../images/big_swing.png");
-	background-position: center 150px;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-    background-position: center; 
+    background-position: center 250px; 
 	background-color: #d3dcf2;
 	color: #43464c;
 }
