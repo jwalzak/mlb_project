@@ -10,7 +10,7 @@ $header-font: 'Bevan';
 body {
   padding: 0;
   display: block;
-  background: $off-white;
+  background: $light-blue;
 }
 
 header {
@@ -35,7 +35,11 @@ ul {
   list-style-type: none;
 }
 
+h2 {
+  color: $off-white;
+}
+
 .result {
   background: $dark-blue;
-  color: $light-blue;
+  color: $off-white;
 }

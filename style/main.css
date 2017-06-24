@@ -1,7 +1,7 @@
 body {
   padding: 0;
   display: block;
-  background: #D8E5BC; }
+  background: #0C2F7D; }
 
 header {
   padding-top: -10px;
@@ -22,8 +22,11 @@ header {
 ul {
   list-style-type: none; }
 
+h2 {
+  color: #D8E5BC; }
+
 .result {
   background: #000717;
-  color: #0C2F7D; }
+  color: #D8E5BC; }
 
 /*# sourceMappingURL=main.css.map */
