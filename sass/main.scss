@@ -1,0 +1,41 @@
+@import '_mixin';
+
+$dark-red: #6B0003;
+$light-red: #D90009;
+$off-white: #D8E5BC;
+$light-blue: #0C2F7D;
+$dark-blue: #000717;
+$header-font: 'Bevan';
+
+body {
+  padding: 0;
+  display: block;
+  background: $off-white;
+}
+
+header {
+  padding-top: -10px;
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  background: $dark-blue;
+  h1{
+    line-height:200px;
+    padding: 0;
+    margin: 0;
+    @include stroke(2px, $dark-red);
+    text-align: center;
+    font-family: $header-font;
+    font-size: 10rem;
+    color: $light-blue;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+.result {
+  background: $dark-blue;
+  color: $light-blue;
+}

@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>MLB Demo</title>
-    <link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
-    <script src="https://use.fontawesome.com/c3c19ab8d0.js"></script>
-    <link href="style/main.css" rel="stylesheet" />
-    <script src="scripts/main.js"></script>
+  <meta charset="UTF-8">
+  <title>MLB Demo</title>
+  <link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
+  <script src="https://use.fontawesome.com/c3c19ab8d0.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="style/main.css" rel="stylesheet" />
+  <script src="scripts/main.js"></script>
 </head>
 <body onload="">
-    <header> 
-        <h1>Game Getter</h1>       
-    </header>
-    <div id="wrap">
+  <header>
+    <h1>Game Getter</h1>
+  </header>
+  <div id="wrap">
     <div id="box"></div>
     <h2>Please enter a date the app will then show you all the MLB games played that day.</h2>
     <form>
-        <div id="date">
-        <ul>
-            <label >Day: <li></label><input type="text" id="day1"  /></li>
-            <label>Month:<li> </label><input type="text" id="month1"  /></li>   
-            <label>Year: <li></label><input type="text" id="year1" /></li>  
-            <input id="button" onclick="getToronto()" type="button" value="Submit" />
-            </ul>
-        </div>
-        <div id="toronto"></div>
-        <div id="output"></div>
-    </form>
+      <div class="container">
+        <div class="row" id="date">
+          <ul class="col-md-4 mid">
+            <label >Day: <li></label><input class="form-control" type="text" id="day1"  /></li>
+            <label>Month:<li> </label><input class="form-control" type="text" id="month1"  /></li>
+            <label>Year: <li></label><input class="form-control" type="text" id="year1" /></li>
+            <input id="button" class="btn btn-default" onclick="getToronto()" type="button" value="Submit" />
+          </ul>
+          <div class="col-md-8 mid">
+          <div class="result" id="toronto"></div>
+          <div class="result" id="output"></div>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
 </body>
 </html>
 

@@ -1,3 +1,29 @@
+body {
+  padding: 0;
+  display: block;
+  background: #D8E5BC; }
 
+header {
+  padding-top: -10px;
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  background: #000717; }
+  header h1 {
+    line-height: 200px;
+    padding: 0;
+    margin: 0;
+    text-shadow: 0 0 0 transparent, -1px -1px 0 #6B0003, 0px -1px 0 #6B0003, 1px -1px 0 #6B0003, -1px 0px 0 #6B0003, 0px 0px 0 #6B0003, 1px 0px 0 #6B0003, -1px 1px 0 #6B0003, 0px 1px 0 #6B0003, 1px 1px 0 #6B0003, -2px -2px 0 #6B0003, -1px -2px 0 #6B0003, 0px -2px 0 #6B0003, 1px -2px 0 #6B0003, 2px -2px 0 #6B0003, -2px -1px 0 #6B0003, -1px -1px 0 #6B0003, 0px -1px 0 #6B0003, 1px -1px 0 #6B0003, 2px -1px 0 #6B0003, -2px 0px 0 #6B0003, -1px 0px 0 #6B0003, 0px 0px 0 #6B0003, 1px 0px 0 #6B0003, 2px 0px 0 #6B0003, -2px 1px 0 #6B0003, -1px 1px 0 #6B0003, 0px 1px 0 #6B0003, 1px 1px 0 #6B0003, 2px 1px 0 #6B0003, -2px 2px 0 #6B0003, -1px 2px 0 #6B0003, 0px 2px 0 #6B0003, 1px 2px 0 #6B0003, 2px 2px 0 #6B0003;
+    text-align: center;
+    font-family: "Bevan";
+    font-size: 10rem;
+    color: #0C2F7D; }
+
+ul {
+  list-style-type: none; }
+
+.result {
+  background: #000717;
+  color: #0C2F7D; }
 
 /*# sourceMappingURL=main.css.map */
