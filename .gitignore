@@ -45,3 +45,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#Stuff I put here
+/style/*.css.map
+/.sass-cache
