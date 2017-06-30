@@ -26,6 +26,14 @@ function getBaseballData() {
   var month = document.getElementById('month1').value;
   var year = document.getElementById('year1').value;
 
+  if (day.length === 1) {
+    day = '0' + day;
+  }
+
+  if(month.length === 1 ) {
+    month = '0' + month;
+  }
+
   var tempURL = "http://gd2.mlb.com/components/game/mlb/year_" + year + "/month_" + month + "/day_" + day + "/master_scoreboard.json";
 
   var baseballJson = getJSON("http://gd2.mlb.com/components/game/mlb/year_" + year + "/month_" + month + "/day_" + day + "/master_scoreboard.json");
