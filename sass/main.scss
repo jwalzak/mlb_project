@@ -39,6 +39,13 @@ h2 {
   color: $off-white;
 }
 
+label {
+  color: $dark-red;
+  font-weight: bold;
+  font-size: 30px;
+  @include stroke(2px, $dark-blue);
+}
+
 .result {
   font-size: 2rem;
   background: $dark-blue;

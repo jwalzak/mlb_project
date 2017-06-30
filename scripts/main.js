@@ -34,6 +34,10 @@ function getBaseballData() {
     month = '0' + month;
   }
 
+  if(year.length !== 4) {
+    document.querySelector(".year").innerHTML += 'Please enter the year in four digits';
+  }
+
   var tempURL = "http://gd2.mlb.com/components/game/mlb/year_" + year + "/month_" + month + "/day_" + day + "/master_scoreboard.json";
 
   var baseballJson = getJSON("http://gd2.mlb.com/components/game/mlb/year_" + year + "/month_" + month + "/day_" + day + "/master_scoreboard.json");
