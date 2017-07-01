@@ -1,6 +1,5 @@
 var baseballObject;
 
-
 // AJAX XMLHttpRequest to get the JSON
 // from the site defined by url
 function getJSON(url) {
@@ -36,16 +35,19 @@ function getBaseballData() {
 
   if(year.length !== 4) {
     document.querySelector(".year").innerHTML += 'Please enter the year in four digits';
+    document.querySelector("#year1").value = '';
+  } else {
+    document.querySelector(".year").innerHTML = `Year: <li></label><input class="form-control" type="text" value=${ year } id="year1" /></li><input id="button" class="btn btn-default" onclick="getToronto()" type="button" value="Submit" />`;
   }
-try {
-  var tempURL = "http://gd2.mlb.com/components/game/mlb/year_" + year + "/month_" + month + "/day_" + day + "/master_scoreboard.json";
+  try {
+    var tempURL = "http://gd2.mlb.com/components/game/mlb/year_" + year + "/month_" + month + "/day_" + day + "/master_scoreboard.json";
 
-  var baseballJson = getJSON("http://gd2.mlb.com/components/game/mlb/year_" + year + "/month_" + month + "/day_" + day + "/master_scoreboard.json");
-}
-catch (err) {
-  console.log(err.message);
-  alert('No games available for that date');
-}
+    var baseballJson = getJSON("http://gd2.mlb.com/components/game/mlb/year_" + year + "/month_" + month + "/day_" + day + "/master_scoreboard.json");
+  }
+  catch (err) {
+    console.log(err.message);
+    alert('No games available for that date');
+  }
 
   baseballObject = JSON.parse(baseballJson);
 }
@@ -93,9 +95,7 @@ function createContent() {
       if(homeTeam != 'Blue Jays' && awayTeam != 'Blue Jays'){
 
         totalDiv += creDiv + "The home team is: " + homeTeam + ". The away team is: " + awayTeam + "<br>" + homeTeam + " with " + homeScore + " runs <br>" + awayTeam + " with " + awayScore + " runs";
-       document.getElementById("output").innerHTML = totalDiv;
-     }
-   }
- }
-
-
+        document.getElementById("output").innerHTML = totalDiv;
+      }
+    }
+  }
